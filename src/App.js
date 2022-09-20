@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import { Route, Routes } from "react-router-dom";
+import { Container } from "react-grid-system";
+
+import Header from "./components/header/Header";
+import Homepage from "./pages/Home";
+
+import "./App.css";
 
 function App() {
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const eduRef = useRef(null);
+  const workRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header
+        contactRef={contactRef}
+        aboutRef={aboutRef}
+        skillRef={skillsRef}
+        eduRef={eduRef}
+        worksRef={workRef}
+      >
+        <Container fluid>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Homepage
+                  aboutRef={aboutRef}
+                  skillsRef={skillsRef}
+                  eduRef={eduRef}
+                  workRef={workRef}
+                  contactRef={contactRef}
+                />
+              }
+            />
+          </Routes>
+        </Container>
+      </Header>
     </div>
   );
 }

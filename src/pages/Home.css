@@ -1,0 +1,272 @@
+.main_parent {
+  position: relative;
+  height: auto;
+}
+
+.homepage_main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.homepage_background {
+  margin-top: 50px;
+  height: 300px;
+  border-radius: 15rem;
+  background: #f7971e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd200,
+    #f7971e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffd200,
+    #f7971e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  filter: blur(50px);
+}
+
+.homepage_background_night {
+  margin-top: 50px;
+  height: 300px;
+  border-radius: 15rem;
+}
+
+.header_home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.header_home_2 {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 575px) {
+  .homepage_main {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100vw;
+  }
+
+  .homepage_background,
+  .homepage_background_night {
+    margin-top: 30px;
+    height: 600px;
+  }
+
+  .header_home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+
+  .header_home_2 {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header_home_2 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
+  position: absolute;
+  z-index: 100;
+}
+
+.header_img {
+  height: fit-content;
+  position: relative;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tiny_badge_one {
+  position: absolute;
+  top: 5;
+  left: 0;
+  z-index: 101;
+}
+
+.tiny_badge_two {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  z-index: 101;
+}
+
+.tiny_badge_three {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  z-index: 101;
+}
+
+.icons {
+  position: relative;
+  top: 2px;
+}
+
+.homepage_skills {
+  position: relative;
+  /* height: 300px; */
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill_show {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: inherit;
+  column-gap: 5px;
+  row-gap: 5px;
+  width: 90%;
+  margin: auto;
+}
+
+.skill_card {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  -webkit-filter: grayscale(1);
+  cursor: pointer;
+}
+
+.skill_card:hover {
+  -webkit-filter: grayscale(0);
+}
+
+.icons_skill {
+  color: #b80084;
+  margin-bottom: 10px;
+}
+
+.gooey {
+  width: 300px;
+  height: 200px;
+}
+
+.homepage_edu {
+  text-align: center;
+  position: relative;
+}
+
+.edu_show {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-gap: inherit;
+  column-gap: 5px;
+  row-gap: 5px;
+  width: 90%;
+  margin: auto;
+}
+
+.edu_card {
+  -webkit-filter: grayscale(1);
+}
+
+.edu_card:hover {
+  -webkit-filter: grayscale(0);
+}
+
+.homepage_projects {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.projects_container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1100px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-gap: inherit;
+  column-gap: 5px;
+  row-gap: 5px; */
+  width: 90%;
+  margin: auto;
+  /* background-color: #c3e060; */
+}
+
+.carousel_div {
+  background-color: #b80084;
+}
+
+.lower_brightness {
+  filter: brightness(70%);
+}
+
+.lower_brightness_2 {
+  /* backdrop-filter: brightness(0%); */
+}
+
+.homepage_contact {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact_actions {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-flex;
+  gap: 5px;
+}
+
+.contact_email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  height: auto;
+}
+
+.footer_light {
+  background-color: #ffe5f8;
+}
+
+.footer_dark {
+  background-color: #470033;
+}
